@@ -1,25 +1,93 @@
 main {
     max-width: 840px;
+    margin: auto; /* Centers the main content */
 }
+
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solide reb(000/0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Fixed border syntax and color */
     padding: 1rem;
-    background-color:#eee;
-    color:#333;
+    background-color: #eee;
+    color: #333;
     text-align: center;
 }
+
 aside img {
-    width:200px;
+    width: 200px;
     height: auto;
 }
+
 main img {
     width: 150px;
-    height:auto;
+    height: auto;
 }
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+    padding: 2pt; /* ✅ Added padding with correct unit */
+}
+/* Style the navigation bar */
+nav {
+  background-color: #4a90e2;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Nav links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #357abd;
+  display: inline-block;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #285d9c;
+}
+
+/* Hamburger button */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger on small screens */
+  }
+
+  nav a {
+    display: none; /* Hide links by default */
+    width: 100%;
+  }
+
+  nav.active a {
+    display: block; /* Show when nav is active */
+  }
 }
