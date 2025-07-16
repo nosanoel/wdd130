@@ -96,7 +96,7 @@ main {
   margin: auto;
 }
 
-main img {
+img {
   width: 200px;
   height: auto;
 }
@@ -122,11 +122,6 @@ aside {
   background-color: #fdf6e3;
   border-color: #c2a670;
   color: #5a4e3c;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
 }
 
 /* Footer */
