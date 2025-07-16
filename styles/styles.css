@@ -9,45 +9,7 @@ body {
   height: 100%;
 }
 
-main {
-  max-width: 840px;
-  margin: auto;
-}
-
-aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-}
-
-main img {
-  width: 150px;
-  height: auto;
-}
-
-footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-
-/* Navigation Bar */
+/* Navigation */
 nav {
   background-color: #4a90e2;
   padding: 1rem;
@@ -60,21 +22,26 @@ nav {
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0.5rem;
+  width: 120px;
+  height: 40px;
   padding: 0.5rem 1rem;
+  border: 2px solid #357abd;
   border-radius: 5px;
   background-color: #357abd;
-  display: inline-block;
+  color: white;
+  text-decoration: none;
   font-weight: bold;
+  display: inline-block;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
   background-color: #285d9c;
+  border-color: #285d9c;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Hamburger Button */
 .menu-toggle {
   background: none;
   border: none;
@@ -84,7 +51,7 @@ nav a:hover {
   display: none;
 }
 
-/* Mobile Responsive */
+/* Responsive Nav */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
@@ -103,11 +70,68 @@ nav a:hover {
   nav.active a {
     display: block;
   }
+}
 
-  p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-  }
+/* Typography */
+h1 {
+  color: #4a90e2;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+main {
+  max-width: 840px;
+  margin: auto;
+}
+
+main img {
+  width: 200px;
+  height: auto;
+}
+
+/* Asides */
+.aside-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+.passions {
+  background-color: #fdf6e3;
+  border-color: #c2a670;
+  color: #5a4e3c;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
 }
