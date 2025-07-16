@@ -1,41 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 main {
-    max-width: 840px;
-    margin: auto; /* Centers the main content */
+  max-width: 840px;
+  margin: auto;
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Fixed border syntax and color */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 main img {
-    width: 150px;
-    height: auto;
+  width: 150px;
+  height: auto;
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 1rem 0;
-    padding: 2pt; /* ✅ Added padding with correct unit */
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
-/* Style the navigation bar */
+
+/* Navigation Bar */
 nav {
   background-color: #4a90e2;
   padding: 1rem;
@@ -43,9 +55,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
 }
 
-/* Nav links */
 nav a {
   color: white;
   text-decoration: none;
@@ -61,17 +74,17 @@ nav a:hover {
   background-color: #285d9c;
 }
 
-/* Hamburger button */
+/* Hamburger Button */
 .menu-toggle {
   background: none;
   border: none;
   color: white;
   font-size: 2rem;
   cursor: pointer;
-  display: none; /* Hidden by default */
+  display: none;
 }
 
-/* Mobile responsive */
+/* Mobile Responsive */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
@@ -79,15 +92,22 @@ nav a:hover {
   }
 
   .menu-toggle {
-    display: block; /* Show hamburger on small screens */
+    display: block;
   }
 
   nav a {
-    display: none; /* Hide links by default */
+    display: none;
     width: 100%;
   }
 
   nav.active a {
-    display: block; /* Show when nav is active */
+    display: block;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
   }
 }
