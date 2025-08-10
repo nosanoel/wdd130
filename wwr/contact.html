@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact White Water Rafting Company - Get in touch for inquiries, reservations or suggestions. We're happy to help with your adventure planning!">
-    <meta name="author" content="Idehen NOSAYABA">
+    <meta name="author" content="Idehen Nosayaba">
     <title>Contact Us - White Water Rafting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo2.jpeg" alt="White Water Rafting Logo">
+            <img src="images/logo.jpg" alt="White Water Rafting Logo">
         </div>
         <h1>White Water Rafting</h1>
         <nav>
@@ -33,8 +33,8 @@
                 <div class="contact-details">
                     <div class="contact-text">
                         <h3>Contact Information</h3>
-                        <p><strong>Address:</strong> 124 new benin Market Road, Benin City, Edo State, Nigeria</p>
-                        <p><strong>Phone:</strong> +234 811 345 6784</p>
+                        <p><strong>Address:</strong> 123 Oba Market Road, Benin City, Edo State, Nigeria</p>
+                        <p><strong>Phone:</strong> +234 812 345 6789</p>
                         <p><strong>Email:</strong> info@whitewaterraftingng.com</p>
                         <p><strong>Hours:</strong> Monday-Friday: 8am-6pm, Saturday: 9am-4pm</p>
                     </div>
@@ -48,16 +48,16 @@
                 <h2>Meet Our Team</h2>
                 <div class="employee-gallery">
                     <figure>
-                        <img src="images/bob.jpg" alt="Rafting Guide stones">
-                        <figcaption>Jame Stones<br>Head Guide</figcaption>
+                        <img src="images/employee1.jpg" alt="Rafting Guide stones">
+                        <figcaption>John Stones<br>Head Guide</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/bob4.jpg" alt="Operations Manager osas">
-                        <figcaption>Water<br>Operations Manager</figcaption>
+                        <img src="images/employee2.jpg" alt="Operations Manager osas">
+                        <figcaption>Osas Keane<br>Operations Manager</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/kin.jpg" alt="Customer Service Rep Davis">
-                        <figcaption>bob Davis<br>Customer Service</figcaption>
+                        <img src="images/employee3.jpg" alt="Customer Service Rep Davis">
+                        <figcaption>Faraday Davis<br>Customer Service</figcaption>
                     </figure>
                 </div>
             </section>
@@ -76,3 +76,37 @@
                     <div class="form-group">
                         <label>Purpose of Message:</label>
                         <div class="radio-group">
+                            <input type="radio" id="general" name="purpose" value="general" checked>
+                            <label for="general">General Inquiry</label>
+                            
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                            
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 White Water Rafting Company | Idehen Nosayaba</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        </nav>
+        <a href="" class="wireframelink">View Wireframe</a>
+    </footer>
+</body>
+</html>
